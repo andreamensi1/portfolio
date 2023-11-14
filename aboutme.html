@@ -1,1 +1,158 @@
-lalal
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Mio Sito</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+      font-size: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    #logo {
+      width: 40px;
+      height: 60px;
+      margin-left: auto;
+    }
+
+    .centered-text {
+      font-size: 60px;
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .centered-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .square {
+      position: relative;
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000000;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .square:hover .info {
+      opacity: 1;
+    }
+
+    .square img {
+      width: 100%;
+      height: auto;
+      transition: opacity 0.3s ease;
+    }
+
+    .square:hover img {
+      opacity: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      nav li {
+        margin-right: 10px;
+        font-size: 16px;
+      }
+
+      nav a {
+        font-size: 16px;
+      }
+
+      #logo {
+        width: 30px;
+        height: 45px;
+      }
+
+      .centered-text {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      .square {
+        max-width: 100%;
+      }
+    }
+
+    .centered-image img {
+      width: 100%;
+      height: auto;
+      max-width: 1829px; /* Aggiunto max-width */
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="sito.html" id="works">Works</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+      </ul>
+    </nav>
+    <img src="https://i.ibb.co/k4Npwdz/Logo-andrea-2jpg.png" alt="" id="logo">
+  </header>
+
+  <!-- ... (Resto del tuo HTML) ... -->
+
+  <div class="centered-image">
+    <img src="https://i.ibb.co/0hhZJwh/resume-Tavola-disegno-1-03.png" alt="Descrizione dell'immagine">
+  </div>
+</body>
+</html>
