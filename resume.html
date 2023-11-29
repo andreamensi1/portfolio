@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Mio Sito</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+      font-size: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    #logo {
+      width: 40px;
+      height: 60px;
+      margin-left: auto;
+    }
+
+    .centered-text {
+      font-size: 60px;
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .centered-image {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .square {
+      position: relative;
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin: 20px 0;
+      overflow: hidden;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000000;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .square:hover .info {
+      opacity: 1;
+    }
+
+    .square img {
+      width: 100%;
+      height: auto;
+      transition: opacity 0.3s ease;
+    }
+
+    .square:hover img {
+      opacity: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      nav li {
+        margin-right: 10px;
+        font-size: 16px;
+      }
+
+      nav a {
+        font-size: 16px;
+      }
+
+      #logo {
+        width: 30px;
+        height: 45px;
+      }
+
+      .centered-text {
+        font-size: 30px;
+        margin-top: 10px;
+      }
+
+      .square {
+        max-width: 100%;
+      }
+    }
+
+    .centered-image img {
+      width: 100%;
+      height: auto;
+      max-width: 1829px; /* Aggiunto max-width */
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="sito.html" id="works">Works</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+      </ul>
+    </nav>
+    <img src="https://i.ibb.co/k4Npwdz/Logo-andrea-2jpg.png" alt="" id="logo">
+  </header>
+ 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immagini Affiancate con Margine</title>
+    <style>
+      .container {
+        display: flex;
+        margin-top: 20px; /* Margine superiore di 20px per il contenitore */
+      }
+  
+      .image {
+        width: 50%;
+        max-width: 900px; /* Larghezza massima dell'immagine è 300px */
+        height: auto; /* Per mantenere l'aspetto originale dell'immagine */
+        margin-top: 20px; /* Margine superiore di 20px per ogni immagine */
+      }
+  
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column; /* Cambia l'orientamento in colonna su schermi più piccoli */
+        }
+  
+        .image {
+          width: 100%; /* Usa tutta la larghezza del contenitore su schermi più piccoli */
+          max-width: none; /* Rimuovi la larghezza massima su schermi più piccoli */
+        }
+      }
+    </style>
+  </head>
+  <body>
+  
+  <div class="container">
+    <img src="https://i.ibb.co/HBRQbZ5/resume1.png" alt="Prima Immagine" class="image">
+    <img src="https://i.ibb.co/hWB5v4C/resume-2.png" alt="Seconda Immagine" class="image">
+  </div>
+  
+  </body>
+  </html>
+  
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immagini Affiancate con Margine</title>
+    <style>
+      .container {
+        display: flex;
+        margin-top: 20px; /* Margine superiore di 20px per il contenitore */
+      }
+  
+      .image {
+        width: 50%;
+        max-width: 900px; /* Larghezza massima dell'immagine è 300px */
+        height: auto; /* Per mantenere l'aspetto originale dell'immagine */
+        margin-top: 20px; /* Margine superiore di 20px per ogni immagine */
+      }
+  
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column; /* Cambia l'orientamento in colonna su schermi più piccoli */
+        }
+  
+        .image {
+          width: 100%; /* Usa tutta la larghezza del contenitore su schermi più piccoli */
+          max-width: none; /* Rimuovi la larghezza massima su schermi più piccoli */
+        }
+      }
+    </style>
+  </head>
+  <body>
+  
+  <div class="container">
+    <img src="https://i.ibb.co/WFB13db/resume-4.png" alt="Prima Immagine" class="image">
+    <img src="https://i.ibb.co/kDX8DSF/resume-5.png" alt="Seconda Immagine" class="image">
+  </div>
+  
+  </body>
+  </html>
+  
+
+
+
+
+  
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immagini Affiancate con Margine</title>
+    <style>
+      .container {
+        display: flex;
+        margin-top: 20px; /* Margine superiore di 20px per il contenitore */
+      }
+  
+      .image {
+        width: 50%;
+        max-width: 900px; /* Larghezza massima dell'immagine è 300px */
+        height: auto; /* Per mantenere l'aspetto originale dell'immagine */
+        margin-top: 20px; /* Margine superiore di 20px per ogni immagine */
+      }
+  
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column; /* Cambia l'orientamento in colonna su schermi più piccoli */
+        }
+  
+        .image {
+          width: 100%; /* Usa tutta la larghezza del contenitore su schermi più piccoli */
+          max-width: none; /* Rimuovi la larghezza massima su schermi più piccoli */
+        }
+      }
+    </style>
+  </head>
+  <body>
+  
+  <div class="container">
+    <img src="https://i.ibb.co/xDVL6RW/cvcxc.png" alt="Prima Immagine" class="image">
+    <img src=https://i.ibb.co/PF6WgWn/cvcxdsa.png alt="Seconda Immagine" class="image">
+  </div>
+  
+  </body>
+  </html>
+  
+
+    
+  <!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .containerbile2 {
+      text-align: center;
+      margin-top: 100px;
+      position: relative;
+    }
+
+    .contact-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 150px;
+      margin-left: 200px; /* Ridotto il margine per adattarsi meglio sui dispositivi mobili */
+    }
+
+    .additional-words {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      text-align: left;
+      margin-top: 10px;
+      margin-left: 200px; /* Ridotto il margine per adattarsi meglio sui dispositivi mobili */
+    }
+
+    .word-link {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .word-link:hover {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .linkedin-image {
+      position: absolute;
+      top: 20px; /* Ridotto il margine superiore per adattarsi meglio sui dispositivi mobili */
+      right: 100px; /* Ridotto il margine destro per adattarsi meglio sui dispositivi mobili */
+      max-height: 50px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+      /* Regole CSS specifiche per schermi con larghezza massima di 600px (ad es. dispositivi mobili) */
+      .containerbile2 {
+        margin-top: 50px; /* Ridotto il margine superiore per adattarsi meglio sui dispositivi mobili */
+      }
+
+      .contact-text,
+      .additional-words {
+        margin-left: 40px; /* Ridotto il margine per adattarsi meglio sui dispositivi mobili */
+      }
+
+      .linkedin-image {
+        max-height: 40px; /* Ridotto l'altezza massima per adattarsi meglio sui dispositivi mobili */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="containerbile2">
+    <p class="contact-text">Contacts</p>
+    <p class="additional-words"><a href="mailto:andreamensi77@gmail.com" class="word-link">Email: andreamensi77@gmail.com</a></p>
+    <p class="additional-words"><a href="https://www.linkedin.com/in/andrea-mensi/" class="word-link">LinkedIn</a></p>
+    <p class="additional-words"><a href="https://www.behance.net/andreamensi1" class="word-link">Behance</a></p>
+    <img src="https://i.ibb.co/P4FsgQn/repeat-black-glyph-ui-icon-redo-action-next-step-simple-filled-line-element-user-interface-design-si.jpg" alt="LinkedIn Image" class="linkedin-image">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var linkedinImage = document.querySelector('.linkedin-image');
+
+      linkedinImage.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
